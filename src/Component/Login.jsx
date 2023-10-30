@@ -18,7 +18,7 @@ const Login = () => {
       },
       body:JSON.stringify(payload)
     }).then(res=>res.json())
-    .then(res=>{console.log(res)
+    .then(res=>{console.log(res.token)
     localStorage.setItem("token",res.token)
     })
     .catch(err=>console.log(err))
